@@ -1,3 +1,327 @@
-.icon-arrow {
-    color: blue;
+.header {
+    width: 100%;
+    background-color: $light-grey;
+    transition: all $trans-links;
+
+    @include breakpoint ($tablet){
+      border-bottom: 2px solid $silver;
+    }
 }
+
+.header--active {
+    background-color: $white;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content:space-between;
+    width: 100%;
+    align-items: center;
+    padding-top: 22px;
+    padding-bottom: 69px;
+
+    @include breakpoint ($tablet){
+    padding: 22px 0;
+    }
+}
+
+.header__logo {
+    width: 100%;
+}
+
+.header__nav-holder {
+
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint ($tablet) {
+        position: fixed;
+        flex-direction: column;
+        top: 92px;
+        width: 100%;
+        background-color: $white;
+        left: 100%;
+        height: 100%;
+        justify-content: flex-start;
+       transition: all $trans-one;
+       
+      
+    }
+}
+
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+   
+
+    @include breakpoint ($tablet){
+        
+        flex-direction: column;
+        // top: 92px;
+        // width: 100%;
+        // height: 100%;
+        left: 100%;
+        padding: 0 20px;
+       transition: all $trans-one;
+        align-items:initial ;
+      
+    }
+}
+
+.header__nav--active {
+    left: 0;
+}
+
+.nav-item {
+    list-style: none;
+    display: flex;
+    // align-items: center;
+    position: relative;
+    transition: all $trans-links;
+    margin-right: 41px;
+    
+    @include breakpoint ($tablet) {
+        padding:20px 0;
+        border-bottom: 2px solid $silver;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+}
+
+.nav-item--about {
+    padding: 9px 18px;
+    border-radius: 100px;
+    
+
+    @include breakpoint ($tablet) {
+        padding: 20px 0;
+        border-bottom: 2px solid $silver;
+        border-radius: 0;
+    }
+}
+
+.nav-item--about--active {
+    background-color: $blue;
+
+    @include breakpoint ($tablet) {
+       background-color: $white;
+    }
+}
+
+
+
+.nav-link {
+    display: block;
+    text-decoration: none;
+    color: $black;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 27px;
+    transition: all $trans-links;
+
+    &:hover {
+        transform: scale(1.1) translateY(-1px);
+        
+    }
+
+    @include breakpoint ($tablet) {
+        &:hover {
+            transform: none;
+        }  
+     }
+}
+
+.nav-link--about-active{
+    color: $white;
+    @include breakpoint ($tablet) {
+        color: $black;
+     }
+}
+
+
+.header__icon {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 80%;
+    color: $blue;
+    margin-left: 5px;
+    transition: all $trans-links;
+
+    &--one {
+        font-size: 8px;
+    }
+   
+}
+
+.header__icon--active {
+    color: $white;
+    @include breakpoint ($tablet) {
+        color: $blue;
+     }
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.menu {
+    display: none;
+    @include breakpoint ($tablet) {
+        display: block;
+        font-weight: 600;
+        font-size: 16px;
+        margin-right: 38px;
+        line-height: 27px;  
+        color: $black;
+        margin-right: 0px;
+        margin-left: 29px;
+    }
+}
+
+.hamburger {
+    display: none;
+    @include breakpoint ($tablet){
+        display: block;
+        width: 24px;
+        border: none;
+        background-color: transparent;
+        margin-right: 10px;
+    }
+}
+
+.bar {
+    display: none;
+    @include breakpoint($tablet) {     
+    display: block;
+    content: "";
+    height:2px ;
+    width: 24px;
+    margin: 4px;
+    background:$black ;  
+    transition: all $trans-btn;
+  }
+        
+}
+
+
+.active {
+    .bar {
+      &:first-child {
+        transform: rotate(45deg);
+        transform-origin: center;
+        position: relative;
+        top: 5px;
+      }
+  
+      &:last-child {
+        transform: rotate(-45deg);
+        transform-origin: center;
+        position: relative;
+        bottom: 2px;
+      }
+    }
+  }
+.header__drop-menu {
+    padding: 25px 144px 30px 20px;
+    background-color: $white;
+    box-shadow: 0 0 5px $silver;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    top: 55px;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    transition: all $trans-one;
+
+    @include breakpoint ($tablet) {
+        display: none;
+     }
+}
+
+.drop-menu--active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu-item:not(:last-child) {
+    margin-bottom: 20px;
+
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    white-space: nowrap;
+    color: $silver;
+    transition: all $trans-links;
+
+    &:hover {
+        color: $blue;
+        transform: scale(1.1);
+    }
+
+}
+
+.header__drop-accordion{
+    display: none;
+    @include breakpoint ($tablet) {
+        display: block;
+        position: relative;
+        width: 100%;
+       
+        padding-left: 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: all $trans-two;        
+    }
+}
+
+.drop-accordion-item {
+    margin: 20px 0;
+}
+   
+
+
+
+
+.drop-accordion-link {
+    text-decoration: none;
+    color: $silver;
+    
+}
+
+.item-box {
+        display: flex;
+        align-items: center;
+}
+
+.header__btn{
+    @include breakpoint ($mobile) {
+        display: none;
+    }
+}
+
+.btn--menu {
+    display: none;
+
+    @include breakpoint ($mobile) {
+        display: block;
+        margin-top: 20px;
+        align-self: flex-start;
+        margin-left:20px ;
+
+
+    }
+}
+

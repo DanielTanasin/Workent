@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1669018879854');
-	src: url('../fonts/iconfont.eot?#iefix-1669018879854') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1669018879854') format('woff2'),
-		url('../fonts/iconfont.woff?1669018879854') format('woff'),
-		url('../fonts/iconfont.ttf?1669018879854') format('truetype');
+	src: url('../fonts/iconfont.eot?1669045411190');
+	src: url('../fonts/iconfont.eot?#iefix-1669045411190') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1669045411190') format('woff2'),
+		url('../fonts/iconfont.woff?1669045411190') format('woff'),
+		url('../fonts/iconfont.ttf?1669045411190') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -20,7 +20,6 @@ iconfont Webfont
 	line-height: 1;
 	font-weight: normal;
 	font-style: normal;
-	//es-lint disable-next-line
 	speak: none;
 	text-decoration: inherit;
 	font-size: inherit;
@@ -48,4 +47,4 @@ Glyphs list
 
 .icon-Speedometer::before {
 	content: '\ea04';
-}
+}

@@ -17,31 +17,82 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-      <header class="header">
+      <header class="header js-header">
         <div class="container">
           <div class="header__wrapper">
             <div class="header__logo-box">
               <img src="/assets/images/logo.png" alt="img of logo" class="header__logo">
-              <ul class="header__nav">
+            </div>
+            <div class="header__nav-holder js-nav">
+              <ul class="header__nav ">
                 <li class="nav-item">
                   <a href="#" class="nav-link">The Workent Origin</a>
                 </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link">About</a>
-                  <span class="icon-arrow header__icon"></span>
+                <li class="nav-item nav-item--about js-nav-item">
+                  <div class="item-box-holder">
+                    <div class="item-box">
+                      <a href="#" class="nav-link nav-link--about js-nav-link">About</a>
+                      <span class="icon-arrow header__icon header__icon--one js-icon"></span>
+                    </div>
+                    <div class="drop-acordion-item-wrap">
+                      <ul class="header__drop-accordion js-drop-accordion">
+                        <li class="drop-accordion-item">
+                          <a href="#" class="drop-accordion-link">Overview</a>
+                        </li>
+                        <li class="drop-accordion-item">
+                          <a href="#" class="drop-accordion-link">Our story</a>
+                        </li>
+                        <li class="drop-accordion-item">
+                          <a href="#" class="drop-accordion-link">Our team</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="header__drop-menu js-drop-menu">
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Overview</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Our story</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="" class="menu-link">Our team</a>
+                    </li>
+                  </ul>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="nav-link">News</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">Careers</a>
-                  <span class="icon-link header__icon"></span>
+                  <div class="item-box">
+                    <a href="#" class="nav-link">Careers</a>
+                    <span class="icon-link header__icon"></span>
+                  </div>
                 </li>
               </ul>
+              <button class="btn btn--menu">Contact Us</button>
             </div>
+            <div class="header__menu">
+                <button class="btn header__btn">Contact Us</button>
+                <span class="menu">Menu</span>
+                <button class="hamburger js-ham">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </button>
+              </div>
           </div>
         </div>
       </header>
+      <section class="diagnos">
+        <div class="container">
+          <div class="diagnoss__wrapper">
+            <div class="diagnos__content">
+              <img src="/assets/images/FingerLQ.png" class="finger-img" alt="">
+              <img src="/assets/images/DeviceShape.png"class="shape-img" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
     <script type="module" src="./js/main.js"></script>
   </body>
 </html>
