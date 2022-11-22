@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1669045411190');
-	src: url('../fonts/iconfont.eot?#iefix-1669045411190') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1669045411190') format('woff2'),
-		url('../fonts/iconfont.woff?1669045411190') format('woff'),
-		url('../fonts/iconfont.ttf?1669045411190') format('truetype');
+	src: url('../fonts/iconfont.eot?1669111158325');
+	src: url('../fonts/iconfont.eot?#iefix-1669111158325') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1669111158325') format('woff2'),
+		url('../fonts/iconfont.woff?1669111158325') format('woff'),
+		url('../fonts/iconfont.ttf?1669111158325') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -41,10 +41,14 @@ Glyphs list
 	content: '\ea02';
 }
 
-.icon-question::before {
+.icon-play::before {
 	content: '\ea03';
 }
 
-.icon-Speedometer::before {
+.icon-question::before {
 	content: '\ea04';
+}
+
+.icon-Speedometer::before {
+	content: '\ea05';
 }

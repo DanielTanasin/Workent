@@ -1,0 +1,34 @@
+.video {
+    width: 100%;
+}
+
+.video__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 177px;
+    padding-bottom: 150px;
+
+    @include breakpoint ($tablet){
+        padding-top: 100px;
+        padding-bottom:100px ;
+    }
+    @include breakpoint ($mobile){
+    padding: 70px 0;
+    }
+}
+
+.video__iframe {
+    width: 100%;
+    min-height:691px;
+    border-radius: 10px;
+
+    @include breakpoint ($tablet){
+     min-height: 408px;
+    }
+    @include breakpoint ($mobile){
+     min-height: 188px;
+     border-radius: 0;
+    }
+}

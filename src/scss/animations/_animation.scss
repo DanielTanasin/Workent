@@ -1,0 +1,13 @@
+
+@keyframes scrollDown { 
+    0% {
+        opacity: 1;
+        top: 20%;
+
+    }
+
+    100% {
+        opacity: 0;
+        top: 70%;
+    }
+}

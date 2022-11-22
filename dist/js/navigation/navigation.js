@@ -26,11 +26,19 @@ const closeDrop = () => {
 
 
 const openHam = () => {
-    header.classList.toggle('header--active');
-    ham.classList.toggle('active');
-    navMenu.classList.toggle('header__nav--active');
+    // header.classList.toggle('header--active');
+    if (!header.classList.contains('header--active')){
+        header.classList.add('header--active')
+    } else{
+        header.classList.remove('header--active');
+ }           
+            
+ ham.classList.toggle('active');
+ navMenu.classList.toggle('header__nav--active');
+        }        
+
     
-}
+
 
 const openDropAcc = () => {
     if (panel.style.maxHeight){

@@ -3,9 +3,6 @@
     background-color: $light-grey;
     transition: all $trans-links;
 
-    @include breakpoint ($tablet){
-      border-bottom: 2px solid $silver;
-    }
 }
 
 .header--active {
@@ -27,6 +24,10 @@
 
 .header__logo {
     width: 100%;
+
+    @include breakpoint ($mobile){
+        width: 80%;
+        }
 }
 
 .header__nav-holder {
@@ -36,15 +37,21 @@
 
     @include breakpoint ($tablet) {
         position: fixed;
+        z-index: 3;
         flex-direction: column;
-        top: 92px;
+        top: 89px;
         width: 100%;
         background-color: $white;
         left: 100%;
         height: 100%;
+        border-top: 2px solid $silver;
         justify-content: flex-start;
        transition: all $trans-one;
        
+      
+    }
+    @include breakpoint ($mobile) {
+       top: 70px;
       
     }
 }
