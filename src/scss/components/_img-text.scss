@@ -2,52 +2,106 @@
     width: 100%;
     background-color:$light-grey ;
     position: relative;
+    overflow: hidden;
+
 }
 
-.img-text__wrapper {
-    padding:155px 0 182px 0  ;
-    width: 100%;
+.image-text__wrapper {
     display: flex;
+    position: relative;
     justify-content:center;
     align-items: center;
-    
+    padding: 155px 0;
+
+    @include breakpoint ($tablet) {
+        flex-direction: column;
+        padding: 88px 0 105px 0;
+        gap: 40px;
+    }
+    @include breakpoint ($mobile) {
+        padding: 48px 20px 59px 20px;
+        gap: 25px;
+    }
+
 }
 
-.img-text__box {
+
+
+.img-text__img {
+    max-height:670px ;
+
+    @include breakpoint ($tablet) {
+        max-height: 611px;
+     
+    }
+    @include breakpoint ($mobile) {
     position: relative;
-    
-}
+      max-height:337px ;
+      left: 20px;
 
+    }
+}
 
 
 .img-text__content {
     display: block;
     flex-direction: column;
+    position: relative;
+    left: -267px;
+
+    @include breakpoint ($tablet) {
+     left: 0;
     
+    }
+
+}
+
+.img-text__content-box:not(:last-child) {
+    margin-bottom: 15px;
+    @include breakpoint ($mobile) {
+        margin-bottom: 10px;
+       }
+
+    
+
 }
 
 
 .img-text__heading {
     margin-bottom: 63px;
+
+    @include breakpoint ($tablet) {
+        margin-bottom: 50px;
+       }
+    @include breakpoint ($mobile) {
+        margin-bottom: 30px;
+       }
+
 }
 
 .img-text__content-boxes {
     display: block;
-   margin-bottom: 60px;
+   margin-bottom: 58px;
+
+   @include breakpoint ($mobile) {
+  max-width: 284px;
+  margin-bottom: 30px;
+   }
 }
 
 .img-text__content-box {
     display: flex;
     align-items: center;
-    
+
 }
-.img-text__content-box:not(:last-child) {
-   margin-bottom: 43px;
-    
-}
+
 
 .img-text__content-img-box {
     margin-right: 31px;
+
+    @include breakpoint ($mobile) {
+        margin-right: 20px;
+       }
 }
 
 .img-text__content-heading {
@@ -55,6 +109,12 @@
     font-size: 23px;
     line-height: 130%;
     margin-bottom: 5px;
+
+    @include breakpoint ($mobile) {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 130%;
+       }
 }
 
 .blue-span {
@@ -66,11 +126,35 @@
     font-size: 14px;
     line-height: 160%;
     color: $text;
-    max-width: 530px;
     
+    @include breakpoint ($mobile) {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 160%;
+       }
+
 }
 
 .img-text__content-p--one {
     max-width: 530px;
     margin-bottom: 30px;
+}
+
+.img-text__btn{
+
+    @include breakpoint ($tablet) {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 120%;
+        padding: 12px 20px;
+       }
+}
+
+
+.img-text__content-img {
+    @include breakpoint ($mobile) {
+        max-width: 35.66px;
+        max-height: 35.66px;
+       }
 }

@@ -161,6 +161,7 @@
     height: 50px;
     border:1.5px solid $black;
     border-radius: 100px;
+    cursor: pointer;
 
     @include breakpoint ($tablet) {
             display: none;
