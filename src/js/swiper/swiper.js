@@ -3,11 +3,6 @@ const btnPrev = document.querySelector(".js-btn-slider-left");
 
 
 const swiper = new Swiper('.swiper', {
-    // slidesPerView: 4,
-    // spaceBetween: 20,
-    // watchSlidesProgress:true,
-    // loopFillGroupWithBlank: true,
-
     breakpoints: {
         1199: {
             slidesPerView: 4,
