@@ -26,7 +26,6 @@ const closeDrop = () => {
 
 
 const openHam = () => {
-    // header.classList.toggle('header--active');
     if (!header.classList.contains('header--active')){
         header.classList.add('header--active')
     } else{
