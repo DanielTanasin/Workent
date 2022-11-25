@@ -1,0 +1,157 @@
+.technology {
+    width: 100%;
+    background-image: url(../../assets/images/parallax2.png);
+    min-height:470px ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include breakpoint ($tablet) {
+        background-attachment: fixed;      
+        background-image: url(../../assets/images/parallax3.png);
+        min-height: 480px;
+    }
+    @include breakpoint ($mobile) {
+        min-height: 627px;
+    }
+}
+
+.techonology__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.technology__content {
+    position: absolute;
+    z-index: 10;
+    top: 20%;
+    max-width: 1230px;
+    gap: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include breakpoint ($tablet) {
+        flex-direction: column;
+        gap: 50px;
+        top: 12%;
+       
+    }
+    @include breakpoint ($mobile) {
+        flex-direction: column;
+        text-align: center;
+        gap: 46px;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    
+    
+}
+
+.technology__boxes {
+    display: flex;
+    gap: 30px;
+
+    @include breakpoint ($tablet) {
+        gap: 20px;
+      }
+    @include breakpoint ($mobile) {
+        gap: 30px;
+        flex-direction: column;
+      }
+}
+
+.technology__box {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint ($tablet) {
+      max-width: 230px;
+    }
+    @include breakpoint ($mobile) {
+      width: 260px;
+      text-align: center;
+    }
+   
+}
+
+.technology__box:nth-child(2){
+    @include breakpoint ($tablet) {
+       order: 1;
+      }
+    @include breakpoint ($mobile) {
+       order: 2;
+      }
+
+}
+.technology__box:nth-child(1){
+    @include breakpoint ($tablet) {
+       order: 2;
+      }
+      @include breakpoint ($mobile) {
+        order: 3;
+       }
+ 
+}
+.technology__box:nth-child(3){
+    @include breakpoint ($tablet) {
+       order: 3;
+      }
+    @include breakpoint ($mobile) {
+       order: 1;
+      }
+}
+
+
+.technology-heading {
+    color: $white;
+    display: flex;
+    align-self: flex-end;
+    position: relative;
+    bottom: 20px;
+
+    @include breakpoint ($tablet) {
+        bottom: -10px;
+        left: 10px;
+        align-self: flex-start;
+    }
+
+    @include breakpoint ($mobile) {
+        bottom: 0;
+        left: 10px;
+        align-self: center;
+    }
+    
+}
+
+.technology__box-icon {
+    color:$white;
+   font-size: 70px;
+   margin-bottom: 35px;
+   @include breakpoint ($mobile) {
+    font-size: 50px;
+    margin-bottom: 10px ;
+}
+
+}
+
+.technology__p {
+    color: $white;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+
+    @include breakpoint ($tablet) {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+    }
+}

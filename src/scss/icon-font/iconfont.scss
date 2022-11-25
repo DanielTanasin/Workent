@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('../fonts/iconfont.eot?1669281436586');
-	src: url('../fonts/iconfont.eot?#iefix-1669281436586') format('embedded-opentype'),
-		url('../fonts/iconfont.woff2?1669281436586') format('woff2'),
-		url('../fonts/iconfont.woff?1669281436586') format('woff'),
-		url('../fonts/iconfont.ttf?1669281436586') format('truetype');
+	src: url('../fonts/iconfont.eot?1669375341353');
+	src: url('../fonts/iconfont.eot?#iefix-1669375341353') format('embedded-opentype'),
+		url('../fonts/iconfont.woff2?1669375341353') format('woff2'),
+		url('../fonts/iconfont.woff?1669375341353') format('woff'),
+		url('../fonts/iconfont.ttf?1669375341353') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -45,18 +45,30 @@ Glyphs list
 	content: '\ea03';
 }
 
-.icon-link::before {
+.icon-Circuit::before {
 	content: '\ea04';
 }
 
-.icon-play::before {
+.icon-layer::before {
 	content: '\ea05';
 }
 
-.icon-question::before {
+.icon-link::before {
 	content: '\ea06';
 }
 
-.icon-Speedometer::before {
+.icon-play::before {
 	content: '\ea07';
+}
+
+.icon-question::before {
+	content: '\ea08';
+}
+
+.icon-Speedometer::before {
+	content: '\ea09';
+}
+
+.icon-university::before {
+	content: '\ea0a';
 }
